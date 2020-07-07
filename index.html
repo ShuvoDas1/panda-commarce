@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="container">
-        <nav class="navbar bg-light navbar-light navbar-expand-lg">
+        <nav class="navbar bg-light  navbar-light navbar-expand-lg">
             <div class="navbar-brand">
                 <img src="images/logo.png" alt="Panda">
             </div>
@@ -25,7 +25,7 @@
                         <a class="nav-link" href="#shoes">Shoes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="3backpack">Backpack</a>
+                        <a class="nav-link" href="#backpack">Backpack</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#subscribe">Subscribe</a>
@@ -36,24 +36,150 @@
     </div>
     <!--CAROUSEL-->
     <div class="container">
-        <div id="#carousel1" class="carousel slide" data-ride="carousel">
+        <div id="#carousel1" class="carousel slide bg-orange" data-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item carousel-img-1">
-                    <div class="row">
+                <div class="carousel-item  active">
+                    <div class="row align-items-center">
                         <div class="col-md-7">
-                            <h1>MEGA LCD TV FOR SPORTS</h1>
-                            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima optio, doloribus officia molestiae quidem!</P>
-                            <a href="#" class="buy-now">Buy Now>></a>
+                            <div class="pl-5">
+                                <h1>MEGA LCD TV FOR SPORTS</h1>
+                                <P class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit minima optio, doloribus officia molestiae quidem!</P>
+                                <a href="#" type="button" class="btn buy-now">Buy Now</a>
+                            </div>
                         </div>
-                        <div class="col md-4">
-                            <img src="images/banner-images/tv.png" alt="tv">
+                        <div class="col-md-4">
+                            <div>
+                                <img class="img-fluid" src="images/banner-images/tv.png" alt="tv">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <div class="ml-5">
+                                <h1>Super Sound HeadPhone</h1>          
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea autem facere quis nemo quo quasi!</p>
+                                <a href="#" class="btn buy-now">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid" src="images/banner-images/headphone.png" alt="headphone">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <div class="ml-5">
+                                <h1>Xbox For Super Gaming</h1>  
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates blanditiis necessitatibus hic, eveniet non soluta.</p>
+                                <a href="#" class="btn buy-now">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid" src="images/banner-images/xbox.png" alt="xbox">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    <!--CATAGORIES-->
+    <div class="container catagories">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="d-flex justify-content-between align-items-center cat1">
+                    <h2 class="text-light">watch</h1>
+                    <img class="img-fluid"  src="images/categories/watch.png" alt="watch">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-between align-items-center cat2">
+                    <h2 class="text-light">Bag</h1>
+                    <img class="img-fluid" src="images/categories/bag.png" alt="bag">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex justify-content-between align-items-center cat3">
+                    <h2 class="text-light">Shoes</h1>
+                    <img class="img-fluid" src="images/categories/shoes.png" alt="shoes">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--SHOES-->
+    <div class="container">
+        <h5>Shoes</h5>
+        <div class="card-deck" id="shoes">
+                <div class="card">
+                        <img class="img-fluid" src="images/shoes/shoe-1.png" alt="">
+                        <div class="card-body">
+                            <div class="card-title">Puma 350</div>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maiores ipsa consectetur, enim quas eligendi.</p>
+                            <h5>$120</h5>
+                            <a href="#" class="btn buy-now">Buy Now</a>
+                        </div>
+                </div>  
+                <div class="card">
+                    <img class="img-fluid" src="images/shoes/shoe-2.png" alt="">
+                    <div class="card-body">
+                        <div class="card-title">Nike 360</div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maiores ipsa consectetur, enim quas eligendi.</p>
+                        <h5>$300</h5>
+                        <a href="#" class="btn buy-now">Buy Now</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="img-fluid" src="images/shoes/shoe-3.png" alt="">
+                    <div class="card-body">
+                        <div class="card-title">Airmax 370</div>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis maiores ipsa consectetur, enim quas eligendi.</p>
+                        <h5>$320</h5>
+                        <a href="#" class="btn buy-now">Buy Now</a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!--BACKPACK-->
+    <div class="container">
+        <h3>BackPack</h3>
+        <div class="card-deck backpack" id="backpack">
+            <div class="card">
+                <img class="img-fluid" src="images/bags/bag-1.png" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Red Backpack</h5>
+                    <h5>$120</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla, architecto!</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn buy-now" href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-fluid" src="images/bags/bag-2.png" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Blue Backpack</h5>
+                    <h5>$150</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi ex aperiam perferendis impedit, nam quasi?</p>
+                </div>
+                <div class="card-footer">
+                    <a class="btn buy-now" href="#">Buy Now</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-fluid" src="images/bags/bag-3.png" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">Black Backpack</h5>
+                    <h5>$165</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam error sequi iusto nobis molestiae rerum rem veritatis vitae amet provident.</p>
+                </div>
+                <div class="card-footer">
+                    <a href="#"  class="btn buy-now">Buy Now</a>      
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/jquery.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
